@@ -37,6 +37,7 @@ static void window_unload(Window *window) {
 
 static void init(void) {
   window = window_create();
+  window_set_background_color(window, GColorFolly);
   window_set_click_config_provider(window, click_config_provider);
   window_set_window_handlers(window, (WindowHandlers) {
     .load = window_load,

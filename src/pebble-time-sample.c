@@ -28,6 +28,8 @@ static void window_load(Window *window) {
   text_layer = text_layer_create((GRect) { .origin = { 0, 72 }, .size = { bounds.size.w, 20 } });
   text_layer_set_text(text_layer, "Press a button");
   text_layer_set_text_alignment(text_layer, GTextAlignmentCenter);
+  text_layer_set_background_color(text_layer, GColorClear);
+  text_layer_set_text_color(text_layer, GColorMediumSpringGreen);
   layer_add_child(window_layer, text_layer_get_layer(text_layer));
 }
 

@@ -25,8 +25,8 @@ static void window_load(Window *window) {
   Layer *window_layer = window_get_root_layer(window);
   GRect bounds = layer_get_bounds(window_layer);
 
-  text_layer = text_layer_create((GRect) { .origin = { 0, 72 }, .size = { bounds.size.w, 20 } });
-  text_layer_set_text(text_layer, "Press a button");
+  text_layer = text_layer_create(GRect(0, 18, 144, 150));
+  text_layer_set_text(text_layer, "Press\n a \nbutton");
   text_layer_set_text_alignment(text_layer, GTextAlignmentCenter);
   text_layer_set_background_color(text_layer, GColorClear);
   text_layer_set_text_color(text_layer, GColorMediumSpringGreen);
